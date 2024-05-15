@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: airbnb
+    database: airbnb
+    schema: raw
+    tables:
+      - name: listings
+        identifier: raw_listings
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      - name: reviews
+        identifier: raw_reviews
+        columns:
+          - name: listing_id
+            tests:
+              # - unique
+              - not_null
+
