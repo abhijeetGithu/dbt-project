@@ -35,6 +35,9 @@ models:
     stagging:
       +materialized: view
       +schema: dev
+    rtg:
+      +materialized: view
+      +schema: dev
 
 
 # models:
