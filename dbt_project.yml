@@ -38,9 +38,3 @@ models:
     rtg:
       +materialized: view
       +schema: dev
-
-
-# models:
-#   airbnb:
-#     stagging:  
-#       +schema: dev
